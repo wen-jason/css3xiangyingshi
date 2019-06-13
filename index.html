@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./carousel/carousel.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="#" class="logo">
+                <img src="./img/logo.png" alt="">
+            </a>
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a href="#">网站首页</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">精品路线</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">服务优势</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">关于我们</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#">联系我们</a>
+                </li>
+            </ul>
+            <div class='btnwrap'>
+                <span class="nav_btn"></span>
+                <ul class="btn_list">
+                    <li class="btn_item">
+                        <a href="#">网站首页</a>
+                    </li>
+                    <li class="btn_item">
+                        <a href="#">精品路线</a>
+                    </li>
+                    <li class="btn_item">
+                        <a href="#">服务优势</a>
+                    </li>
+                    <li class="btn_item">
+                        <a href="#">关于我们</a>
+                    </li>
+                    <li class="btn_item">
+                        <a href="#">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="swiper" id="swiper"></div>
+        <div class="text">
+            <p>欧洲曼妙之旅 海港之声</p>
+            <p>Enjoy the sound of the European seaport</p>
+        </div>
+        <div class="tran">
+            <ul>
+                <li>
+                    <img src="./img/4.png" alt="">
+                    <p>多项出行路线</p>
+                </li>
+                <li>
+                    <img src="./img/5.png" alt="">
+                    <p>多项出行路线</p>
+                </li>
+                <li>
+                    <img src="./img/6.png" alt="">
+                    <p>多项出行路线</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="title">热销项目</div>
+        <div class="con_list">
+            <div class="con_item">
+                <img src="./img/7.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+            <div class="con_item">
+                <img src="./img/8.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+            <div class="con_item">
+                <img src="./img/9.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+            <div class="con_item">
+                <img src="./img/10.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+            <div class="con_item">
+                <img src="./img/11.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+            <div class="con_item">
+                <img src="./img/12.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+            <div class="con_item">
+                <img src="./img/13.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+            <div class="con_item">
+                <img src="./img/14.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+            <div class="con_item">
+                <img src="./img/7.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+            <div class="con_item">
+                <img src="./img/8.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+            <div class="con_item">
+                <img src="./img/9.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+            <div class="con_item">
+                <img src="./img/10.png" alt="">
+                <p>尼罗河世界上最长河流</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="shadow"></div>
+        <p>在旅行作为一种社会行为，古代即以存在，中国是世界文明古国之一，旅行活动的兴起同样居世界前列，中国早在公元前22世纪就有了。当时最典型的旅行家大概要数大禹了，他为了疏浚九江十八河，游览了大好河山。</p>
+    </div>
+    <script src="./jquery.js"></script>
+    <script src="./carousel/carousel.js"></script>
+    <script>
+        $('.nav_btn').hover(function () {
+            $(this).next().show();
+        })
+        $('.btnwrap').on('mouseleave', function () {
+            $(this).find('.btn_list').hide()
+        })
+        $('#swiper').sliderImg({
+            image: ['./img/1.jpg', './img/2.jpg', './img/3.jpg'],
+            interVal: 2000
+        })
+    </script>
+</body>
+
+</html>
